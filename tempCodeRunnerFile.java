@@ -1,6 +1,4 @@
- // Animal3 sc = new Animal3();
-        // sc.AnimalSound();
-        // pig cs = new pig();
-        // cs.AnimalSound();
-        // dog d = new dog();
-        // d.AnimalSound();
+ // integer a = new integer(10);
+        // int i = a.intValue();
+        // int j = a;
+        // System.out.println(a+" "+i+" "+j);
