@@ -21,6 +21,10 @@ public class ThrowVsThrown {
        return result;
     }
     public static void main(String[] args) {
+        NegitiveRadiusException cs = new NegitiveRadiusException();
+        System.out.println(cs.toString());
+        System.out.println(cs.getMessage());
+        
         try{
         //    int c = Divide(3,0);
         //    System.out.println(c);
