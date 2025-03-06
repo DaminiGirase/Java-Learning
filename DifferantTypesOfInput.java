@@ -25,7 +25,8 @@ public static void main(String[] args) {
     System.out.println("Enter PassWord: ");
     char ch[];
     ch = sc.readPassword();
-    System.out.println("PassWord is: " + ch);
+    String a = String.valueOf(ch);
+    System.out.println("PassWord is: " + a);
 
 }
     
