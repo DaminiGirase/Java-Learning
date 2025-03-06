@@ -1,8 +1,10 @@
+
 public class sumOfArr {
     public static void main(String[] args) {
+       
         //System.out.println("Program to print sum of arr element");
-        @SuppressWarnings("unused")
-        float [] arr = { 90.5f, 95.5f, 98.5f, 99.5f, 97.5f};
+        // @SuppressWarnings("unused")
+        // float [] arr = { 90.5f, 95.5f, 98.5f, 99.5f, 97.5f};
 
         // Practice Question 1
 
