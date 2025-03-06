@@ -1,1 +1,1 @@
- //  throw new MyException();
+char ch[];
