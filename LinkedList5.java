@@ -15,8 +15,8 @@ public class LinkedList5 {
         sc.addAll(cs);
         sc.set(2,4);
         sc.contains(9);
-        sc.addLast(345);
-        sc.addFirst(344);
+        sc.addLast(345);       // new in LinkedList                                         
+         sc.addFirst(344);     // new in LinkedList  
         sc.remove(4);
         sc.set(2,67);
         sc.removeFirstOccurrence(5);
