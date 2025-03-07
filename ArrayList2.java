@@ -20,7 +20,8 @@ public class ArrayList2 {
         System.out.println(l1.lastIndexOf(6));
         l1.set(1,342);
         l1.remove(3);
-        
+        l1.addLast(98);
+        l1.addFirst(11);
        // l1.clear(); --> for cleaar the elements
 
         for(int i=0; i<l1.size(); i++){
