@@ -22,10 +22,11 @@ public class LinkedList5 {
         sc.removeFirstOccurrence(5);
         sc.removeLastOccurrence(2);
         System.out.println(sc.size());
-        for(int i=0; i<sc.size(); i++){
-         System.out.print(sc.get(i));
-         System.out.print(", ");
-        }
+        System.out.println(sc.clone());
+        // for(int i=0; i<sc.size(); i++){
+        //  System.out.print(sc.get(i));
+        //  System.out.print(", ");
+        // }
       
 
     }
