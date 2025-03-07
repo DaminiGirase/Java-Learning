@@ -11,14 +11,22 @@ public class LinkedList5 {
         cs.add(5);
         cs.add(9);
         cs.add(2);
+        cs.add(2);
         sc.addAll(cs);
         sc.set(2,4);
         sc.contains(9);
-        sc.
+        sc.addLast(345);
+        sc.addFirst(344);
+        sc.remove(4);
+        sc.set(2,67);
+        sc.removeFirstOccurrence(5);
+        sc.removeLastOccurrence(2);
+        System.out.println(sc.size());
         for(int i=0; i<sc.size(); i++){
-         System.out.println(sc.get(i));
+         System.out.print(sc.get(i));
+         System.out.print(", ");
         }
-    
+      
 
     }
 }
