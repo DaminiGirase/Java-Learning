@@ -9,9 +9,11 @@ public class LinkedListByOwn {
     }
     public static Node head;
     public static Node tail;
+    public static int size;
 
     public void addFirst(int data){
         Node newNode = new Node(data);
+        size++;
         if(head == null){
             head = tail = newNode;
             return;
@@ -22,6 +24,7 @@ public class LinkedListByOwn {
 
     public void addLast(int data){
         Node newNode = new Node(data);
+        size++;
         if(head == null){
          head = tail = newNode;
             return;
@@ -49,6 +52,7 @@ public class LinkedListByOwn {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i = 0;
         while (i < idx-1) {
@@ -58,14 +62,33 @@ public class LinkedListByOwn {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+    public int removeFirst(){
+        if(size == 0){
+            System.out.println("LL is empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+    }
 public static void main(String[] args) {
     LinkedListByOwn l1 = new LinkedListByOwn();
+     
      l1.addFirst(2);
      l1.addFirst(1);
-     l1.addLast(3);
      l1.addLast(4);
-     l1.add(2, 9);
+     l1.addLast(5);
+     l1.add(2, 3);
+     l1.removeFirst();
      l1.print();
+    System.out.println(l1.size);
 }
     
 }
