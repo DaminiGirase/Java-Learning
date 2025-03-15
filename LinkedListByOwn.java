@@ -78,6 +78,19 @@ public class LinkedListByOwn {
         size--;
         return val;
     }
+    public int ItrSearch(int key){
+        Node temp = head;
+        int i = 0;
+        while (temp != null) {
+            if(temp.data == key){ // Key found
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        // Key not found
+        return -1;
+    }
 public static void main(String[] args) {
     LinkedListByOwn l1 = new LinkedListByOwn();
      
@@ -89,6 +102,8 @@ public static void main(String[] args) {
      l1.removeFirst();
      l1.print();
     System.out.println(l1.size);
+    System.out.println(l1.ItrSearch(3));
+    System.out.println(l1.ItrSearch(10));
 }
     
 }
